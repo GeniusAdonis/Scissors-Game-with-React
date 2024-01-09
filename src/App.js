@@ -8,7 +8,6 @@ import Stage2 from './components/stage-2/stage-2';
 import { useState } from 'react';
 
 function App() {
-
   const [rulesModal, setRulesModal] = useState(false);
   const [gameStage, setGameStage] = useState(1);
   const [myPick, setMyPick] = useState(null);
@@ -38,7 +37,6 @@ function App() {
 
         } } />
       }
-
       {
         gameStage === 2 && <Stage2  gameStage={gameStage} myPick={myPick} compPick={compPick} result={result} restart={() => {
           setGameStage(1)
